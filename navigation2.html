@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navigation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            margin-top: 20px;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        li {
+            display: inline;
+            margin-right: 40px;
+            font-weight: 900;
+        }
+
+        button {
+            font-weight: 900;
+        }
+
+        .log {
+            padding: 5px 15px;
+            border: none;
+            background-color: white;
+        }
+
+        .sign {
+            background-color: blue;
+            color: white;
+            padding: 5px 15px;
+            border: none;
+        }
+
+        h1 {
+            color: yellow;
+        }
+
+        @media screen and (max-width:800px) {
+            li {
+                display: block;
+                margin-right: 0px;
+                margin-bottom: 20px;
+            }
+            
+            .log, .sign {
+                padding: 3px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>My Page</h1>
+
+        <ul>
+            <li>About</li>
+            <li>Services</li>
+            <li>Pricing</li>
+            <li>Contact</li>
+        </ul>
+
+        <div>
+            <button class="log">Login</button>
+            <button class="sign">Sign up</button>
+        </div>
+    </nav>
+
+    
+</body>
+</html>

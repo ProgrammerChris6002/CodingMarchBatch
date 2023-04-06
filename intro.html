@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro To JavaScript</title>
+    <style>
+        .sect {
+            height: 400px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <!-- What is JavaScript? -->
+    <div class="box">
+        <button onclick="window.alert('Hello World!')">Click Me</button>
+    </div>
+    <p>A paragraph</p>
+    <section class="sect">
+        My section
+    </section>
+    <nav id="box">A navigation</nav>
+
+
+    <script>
+        console.log("Ebuka");
+        console.log(2+3);
+
+        document.write("JavaScript");
+
+        // window.alert("This is an alert!!!")
+
+        // window.prompt("What is your name?")
+        // window.confirm("Are you sure?")
+
+        document.querySelector("p").innerHTML = 'Hello World';
+        document.getElementById("box").innerHTML = "Selection by id";
+
+        document.querySelector('.sect').innerHTML = 'Selection By Class';
+
+        document.querySelector(".sect").style.backgroundColor = "blue";
+
+    </script>
+</body>
+</html>

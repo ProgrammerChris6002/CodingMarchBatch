@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsiveness</title>
+    <style>
+        div {
+            width: 1000px;
+            height: 200px;
+        }
+
+        .one {
+            background-color: yellow;
+        }
+
+        .two {
+            background-color: blue;
+        }
+
+        .three {
+            background-color: red;
+        }
+
+
+        @media screen and (max-width:600px) {
+            div {
+            width: 500px;
+            height: 100px;
+            }
+
+            .one {
+                background-color: purple;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="one"></div>
+    <div class="two"></div>
+    <div class="three"></div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        ol {
+            background-color: red;
+        }
+
+        footer ol {
+            background-color: lime;
+        }
+
+        div, nav, header {
+            background-color: blue;
+            color: white;
+        }
+        header {
+            background-color: red;
+            font-size: 25px;
+            font-style: italic;
+            font-weight: 800;
+            font-family: 'Gills Sans';
+            text-align: right;
+            text-transform: uppercase;
+
+            height: 300px;
+            width: 300px;
+
+            border: 5px solid green;
+            border-left: 4px dashed yellow;
+
+            padding: 100px;
+            padding: 100px 50px;
+            padding: 100px 75px 50px 25px;
+            padding-left: 100px;
+            padding-right: 75px;
+            padding-top: 50px;
+            padding-bottom: 25px;
+
+            margin: 200px;
+            margin: 200px 100px;
+            margin: 200px 150px 100px 50px;
+            margin-left: 100px;
+            margin-right: 75px;
+            margin-top: 50px;
+            margin-bottom: 25px;
+        }
+
+        button {
+            background-color: hsl(120, 100%, 50%);
+            color: white;
+            font-size: 20px;
+            border: none;
+            border-radius: 10px;
+            margin-left: 100px;
+            opacity: 0.4;
+        }
+
+        span {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <footer>
+        <p>This is a paragraph</p>
+        <ol>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ol>
+    </footer>
+
+    <ol>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ol>
+
+
+    <!--Comma Seperator-->
+
+    <div>This is a div</div>
+    <nav>This is a nav</nav>
+    <header>This is a header</header>
+
+    <button>Button</button>
+
+    <p class="class">This site is protected by reCAPTCHA and google <span>Privacy Policy</span>and <span>Terms of Service</span> apply</p>
+</body>
+</html>

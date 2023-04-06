@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+div {
+    font-family: 'Gill Sans MT';
+    background-color: yellow;
+    color: white;
+}
+
+.mydiv {
+    font-size: 40px;
+    background-color: purple;
+    color: white;
+    font-family: 'Gill Sans MT';
+}
+
+#para {
+    font-size: 30px;
+    font-style: italic;
+}
+
+
+p#para {
+    font-size: 60px;
+    background-color: pink;
+    width: 300px;
+    height: 300px;
+    padding: 50px 100px 150px 200px;
+    padding-left: 200px;
+    padding-top: 200px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+
+    margin: 200px;
+    margin-left: 60px;
+    margin-right: 50px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    
+    margin: auto;
+
+    border: 3px solid lime;
+    border-radius: 100%;
+    opacity: 0.7;
+    
+}
+
+
+/* CSS Box Model */

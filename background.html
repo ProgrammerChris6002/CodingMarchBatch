@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+        .box {
+            width: auto;
+            height: 625px;
+            background-image: url("img4.jpg");
+            background-repeat: no-repeat;
+            background-size: 100%;
+        }
+
+        .position {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: auto;
+            height: 500px;
+            background-color: blue;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .one {
+            position: absolute;
+            top: 100px;
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+        }
+
+        .class2 {
+            background-color: purple;
+            top: -20px;
+            left: 10px;
+            z-index: 1;
+        }
+
+        .class22 {
+            top: 0px;
+            z-index: 2;
+        }
+
+        .class22:hover {
+            top: -50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+    <div class="position">
+        <div class="one class2"></div>
+        <div class="one class22"></div>
+    </div>
+</body>
+</html>

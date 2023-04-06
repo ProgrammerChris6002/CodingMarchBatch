@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-color: black;
+            width: auto;
+            height: 500px;
+        }
+
+        .items {
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            /* transition-property: all;
+            transition-duration: 2s; */
+            animation-name: kaycee;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes kaycee {
+            0% {
+                transform: translateY(100px);
+            }
+            25% {
+                transform: translateY(-100px);
+                background-color: lime;
+            }
+            50% {
+                transform: translateY(100px);
+                background-color: yellow;
+            }
+            75% {
+                transform: translateY(-100px);
+                background-color: blue;
+            }
+            100% {
+                transform: translateY(100px);
+            }
+        }
+
+        /* .items:hover {
+            background-color: green;
+            transform: translateX(-100px);
+            transform: translateY(-100px);
+        } */
+
+        main {
+            width: auto;
+            height: 600px;
+            background-image: url('animation-1.jpg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            animation-name: img;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes img {
+            0% {
+                background-image: url('animation-1.jpg');
+            }
+            33% {
+                background-image: url('animation-2.jpg');
+            }
+            67% {
+                background-image: url('animation-3.jpg');
+            }
+            100% {
+                background-image: url('animation-1.jpg');
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- <div class="box">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div> -->
+
+    <main>
+
+    </main>
+</body>
+</html>
